@@ -2,14 +2,14 @@ const Dev = require('../models/Dev');
 
 module.exports = {
   async store(req, res) {
-    console.log(req.params.devId);
-    console.log(req.headers.user);
 
     const { user } = req.headers;
     const { devId } = req.params;
 
     const loggedDev = await Dev.findById(user);
     const targetDev = await Dev.findById(devId);
+
+    console.log(loggedDev.name, 'deu deslike em', targetDev.name);
 
     if (!targetDev) {
       return res.status(400).json({ error: "Dev not exists" });
