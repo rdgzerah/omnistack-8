@@ -10,9 +10,9 @@ Aprendendo sobre Node.js, React e React Native!
 
 <hr>
 
-- Professor
+### Professor
 
-[Diego3g](https://github.com/diego3g)
+- [Diego3g](https://github.com/diego3g)
 
 <hr>
 
