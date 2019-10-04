@@ -6,7 +6,7 @@ const routes = require('./routes');
 
 const server = express();
 
-mongoose.connect('mongodb+srv://tindev:tindev@cluster0-yqmxf.mongodb.net/omni?retryWrites=true&w=majority', {
+mongoose.connect('<Link MongoDB>', {
   useNewUrlParser: true
 });
 
